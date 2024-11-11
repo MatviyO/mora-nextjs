@@ -11,14 +11,18 @@ import Services from "@/components/pages/home/services";
 const HomePage: React.FC = () => {
   return (
       <div className="flex flex-col justify-center items-center bg-stone-100">
-        <Navbar />
-        <Hero />
-        <Features />
-        <Services />
-        <HowItWorks />
-        <CashOffer />
-        <Locations />
-        <Footer />
+          <Navbar
+              flowbiteYoutube="https://c.animaapp.com/ucgTyGcI/img/flowbite-youtube-solid-1.svg"
+              icBaselineTiktok="https://c.animaapp.com/ucgTyGcI/img/ic-baseline-tiktok-1.svg"
+              logo="https://c.animaapp.com/ucgTyGcI/img/logo-1-1-1.svg"
+          />
+          <Hero />
+          <Features />
+          <Services />
+          <HowItWorks />
+          <CashOffer />
+          <Locations />
+          <Footer />
       </div>
   );
 };

@@ -1,34 +1,86 @@
-import React from 'react';
 
-const Navbar: React.FC = () => {
+import React from "react";
+import {IconFacebook1, IconX1} from "@/components/icons/home";
+
+interface Props {
+    logo: string;
+    flowbiteYoutube: string;
+    icBaselineTiktok: string;
+}
+
+export const Navbar = ({
+                           logo = "https://c.animaapp.com/ucgTyGcI/img/logo-1-1.svg",
+                           flowbiteYoutube = "https://c.animaapp.com/ucgTyGcI/img/flowbite-youtube-solid.svg",
+                           icBaselineTiktok = "https://c.animaapp.com/ucgTyGcI/img/ic-baseline-tiktok.svg",
+                       }: Props): JSX.Element => {
     return (
-        <header className="flex overflow-hidden flex-col justify-center px-20 py-4 w-full bg-white border-b border-solid border-b-stone-400 max-md:px-5 max-md:max-w-full">
-            <nav className="flex flex-wrap gap-8 justify-center items-center w-full max-md:max-w-full">
-                <ul className="flex flex-col flex-1 shrink items-start self-stretch my-auto text-base text-black uppercase basis-0 min-w-[240px] max-md:max-w-full">
-                    <li className="flex overflow-hidden gap-6 items-start max-md:max-w-full">
-                        <a href="#home">Home</a>
-                        <a href="#about">About us</a>
-                        <a href="#services">Services</a>
-                        <div className="flex gap-1 min-h-[24px]" />
-                        <a href="#contact">Contact us</a>
-                    </li>
-                </ul>
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e6346be8d3112acef759ec9fc9e718743f4ae826f8d70263f22d145ce16dc63c?placeholderIfAbsent=true&apiKey=b76556bb44884a25a2b2e23cb3ba4ea6" alt="Company logo" className="object-contain shrink-0 self-stretch my-auto aspect-[2.75] w-[154px]" />
-                <div className="flex flex-wrap flex-1 shrink gap-8 items-center self-stretch my-auto basis-0 min-w-[240px] max-md:max-w-full">
-                    <div className="flex gap-3 items-center self-stretch my-auto">
-                        <a href="#facebook" aria-label="Facebook"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a8be7091e49b9f432d72c3f9d713dcaaaefac54338763825147844eae5c0f4de?placeholderIfAbsent=true&apiKey=b76556bb44884a25a2b2e23cb3ba4ea6" alt="" className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" /></a>
-                        <a href="#twitter" aria-label="Twitter"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6d8b81b677f7b145f49f99a952c18711d66404b3ac5109285c05adf4d09d3d64?placeholderIfAbsent=true&apiKey=b76556bb44884a25a2b2e23cb3ba4ea6" alt="" className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" /></a>
-                        <a href="#instagram" aria-label="Instagram"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f36b39c9611ee643268e71e39dfce6768b5758faa21776660d3773a34950f557?placeholderIfAbsent=true&apiKey=b76556bb44884a25a2b2e23cb3ba4ea6" alt="" className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" /></a>
-                        <a href="#linkedin" aria-label="LinkedIn"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1989c5b71d765757b6c0d28a63380b32f34d459bc7584b1d669ff60f9d5dd61e?placeholderIfAbsent=true&apiKey=b76556bb44884a25a2b2e23cb3ba4ea6" alt="" className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" /></a>
-                        <a href="#youtube" aria-label="YouTube"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2a3849634dd5f9d095136a4c26bc6090213144f03f7af0601deab489c6da3cf2?placeholderIfAbsent=true&apiKey=b76556bb44884a25a2b2e23cb3ba4ea6" alt="" className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" /></a>
+        <div className="flex flex-col w-[1440px] items-center justify-center px-[72px] py-4 relative bg-white border-b [border-bottom-style:solid] border-colors-light-green-duplicate">
+            <div className="flex items-center justify-center gap-8 relative self-stretch w-full flex-[0_0_auto]">
+                <div className="flex flex-col items-start relative flex-1 grow">
+                    <div className="inline-flex items-start gap-6 relative flex-[0_0_auto]">
+                        <div className="relative w-fit mt-[-1.00px] font-tagline font-[number:var(--tagline-font-weight)] text-black text-[length:var(--tagline-font-size)] tracking-[var(--tagline-letter-spacing)] leading-[var(--tagline-line-height)] whitespace-nowrap [font-style:var(--tagline-font-style)]">
+                            HOME
+                        </div>
+
+                        <div className="relative w-fit mt-[-1.00px] font-tagline font-[number:var(--tagline-font-weight)] text-black text-[length:var(--tagline-font-size)] tracking-[var(--tagline-letter-spacing)] leading-[var(--tagline-line-height)] whitespace-nowrap [font-style:var(--tagline-font-style)]">
+                            ABOUT US
+                        </div>
+
+                        <div className="relative w-fit mt-[-1.00px] font-tagline font-[number:var(--tagline-font-weight)] text-black text-[length:var(--tagline-font-size)] tracking-[var(--tagline-letter-spacing)] leading-[var(--tagline-line-height)] whitespace-nowrap [font-style:var(--tagline-font-style)]">
+                            SERVICES
+                        </div>
+
+                        <div className="relative flex-[0_0_auto]" />
+
+                        <div className="inline-flex items-center justify-center gap-1 relative flex-[0_0_auto]">
+                            <div className="relative w-fit mt-[-1.00px] font-tagline font-[number:var(--tagline-font-weight)] text-black text-[length:var(--tagline-font-size)] tracking-[var(--tagline-letter-spacing)] leading-[var(--tagline-line-height)] whitespace-nowrap [font-style:var(--tagline-font-style)]">
+                                CONTACT US
+                            </div>
+                        </div>
                     </div>
-                    <button className="flex gap-2 justify-center items-center self-stretch px-5 py-3 my-auto bg-white border border-green-700 border-solid min-h-[48px] rounded-[30px] text-base text-black uppercase">
-                        Get started
-                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9c54a3fe94c88bf84c24f7929f745461bacf3545ecd73c872402661e52d9d20?placeholderIfAbsent=true&apiKey=b76556bb44884a25a2b2e23cb3ba4ea6" alt="" className="object-contain shrink-0 self-stretch my-auto aspect-[1.12] w-[27px]" />
+                </div>
+
+                <img className="relative w-[154px] h-14" alt="Logo" src={logo} />
+
+                <div className="flex items-center justify-end gap-8 relative flex-1 grow">
+                    <div className="inline-flex items-center gap-3 relative flex-[0_0_auto]">
+                        <IconFacebook1 className="!relative !w-6 !h-6" color="#038839" />
+                        <img
+                            className="relative w-6 h-6"
+                            alt="Ri instagram fill"
+                            src="https://c.animaapp.com/ucgTyGcI/img/ri-instagram-fill-1.svg"
+                        />
+
+                        <IconX1 className="!relative !w-6 !h-6" color="#038839" />
+                        <img
+                            className="relative w-6 h-6"
+                            alt="Flowbite youtube"
+                            src={flowbiteYoutube}
+                        />
+
+                        <img
+                            className="relative w-6 h-6"
+                            alt="Ic baseline tiktok"
+                            src={icBaselineTiktok}
+                        />
+                    </div>
+
+                    <button className="all-[unset] box-border inline-flex h-12 items-center justify-center gap-4 relative flex-[0_0_auto] rounded-lg">
+                        <button className="all-[unset] box-border inline-flex h-[50px] items-center justify-center gap-2 px-5 py-2 relative flex-[0_0_auto] mt-[-1.00px] mb-[-1.00px] ml-[-1.00px] mr-[-1.00px] bg-colors-white-duplicate rounded-[30px] border border-solid border-colors-dark-green-duplicate">
+                            <div className="relative w-fit font-tagline font-[number:var(--tagline-font-weight)] text-colors-black-duplicate text-[length:var(--tagline-font-size)] tracking-[var(--tagline-letter-spacing)] leading-[var(--tagline-line-height)] whitespace-nowrap [font-style:var(--tagline-font-style)]">
+                                GET STARTED
+                            </div>
+
+                            <img
+                                className="relative w-[27px] h-6"
+                                alt="Vector"
+                                src="https://c.animaapp.com/ucgTyGcI/img/vector-1.svg"
+                            />
+                        </button>
                     </button>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </div>
     );
 };
 
