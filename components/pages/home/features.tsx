@@ -11,7 +11,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
         <div className="flex flex-col justify-center p-6 w-full max-md:px-5">
             <img loading="lazy" src={icon} alt="" className="object-contain self-center aspect-square w-[42px]" />
             <div className="flex flex-col mt-4 w-full">
-                <div className="flex-1 shrink gap-2.5 self-center px-2 py-0.5 max-w-full text-2xl font-bold leading-snug text-white whitespace-nowrap bg-stone-400 rounded-[30px] w-[141px]">
+                <div
+                    className="flex self-center items-center justify-center gap-[10px] px-2 py-0.5 w-[141px] rounded-[30px] bg-[var(--Light-Green,#A5CE8A)] text-2xl font-bold leading-snug text-white whitespace-nowrap max-w-full">
                     {title}
                 </div>
                 <p className="mt-2 text-lg leading-7 text-black">{description}</p>

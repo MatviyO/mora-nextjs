@@ -14,7 +14,7 @@ export const Navbar = ({
                            icBaselineTiktok = "https://c.animaapp.com/ucgTyGcI/img/ic-baseline-tiktok.svg",
                        }: Props): JSX.Element => {
     return (
-        <div className="flex flex-col w-[1440px] items-center justify-center px-[72px] py-4 relative bg-white border-b [border-bottom-style:solid] border-colors-light-green-duplicate">
+        <div className="flex flex-col w-full items-center justify-center px-[72px] py-4 relative bg-white border-b [border-bottom-style:solid] border-colors-light-green-duplicate">
             <div className="flex items-center justify-center gap-8 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex flex-col items-start relative flex-1 grow">
                     <div className="inline-flex items-start gap-6 relative flex-[0_0_auto]">
@@ -65,7 +65,7 @@ export const Navbar = ({
                         />
                     </div>
 
-                    <button className="all-[unset] box-border inline-flex h-12 items-center justify-center gap-4 relative flex-[0_0_auto] rounded-lg">
+                    <div className="all-[unset] box-border inline-flex h-12 items-center justify-center gap-4 relative flex-[0_0_auto] rounded-lg">
                         <button className="all-[unset] box-border inline-flex h-[50px] items-center justify-center gap-2 px-5 py-2 relative flex-[0_0_auto] mt-[-1.00px] mb-[-1.00px] ml-[-1.00px] mr-[-1.00px] bg-colors-white-duplicate rounded-[30px] border border-solid border-colors-dark-green-duplicate">
                             <div className="relative w-fit font-tagline font-[number:var(--tagline-font-weight)] text-colors-black-duplicate text-[length:var(--tagline-font-size)] tracking-[var(--tagline-letter-spacing)] leading-[var(--tagline-line-height)] whitespace-nowrap [font-style:var(--tagline-font-style)]">
                                 GET STARTED
@@ -77,7 +77,7 @@ export const Navbar = ({
                                 src="https://c.animaapp.com/ucgTyGcI/img/vector-1.svg"
                             />
                         </button>
-                    </button>
+                    </div>
                 </div>
             </div>
         </div>

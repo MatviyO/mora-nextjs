@@ -5,6 +5,123 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bg-light-1: #F6FAF4;
+  --black: rgba(0, 0, 0, 1);
+  --body-14-desktop-font-family: "Poppins", Helvetica;
+  --body-14-desktop-font-size: 14px;
+  --body-14-desktop-font-style: normal;
+  --body-14-desktop-font-weight: 400;
+  --body-14-desktop-letter-spacing: 0px;
+  --body-14-desktop-line-height: 150%;
+  --body-16-font-family: "Poppins", Helvetica;
+  --body-16-font-size: 16px;
+  --body-16-font-style: normal;
+  --body-16-font-weight: 400;
+  --body-16-letter-spacing: 0px;
+  --body-16-line-height: 150%;
+  --body-18-desktop-font-family: "Poppins", Helvetica;
+  --body-18-desktop-font-size: 18px;
+  --body-18-desktop-font-style: normal;
+  --body-18-desktop-font-weight: 400;
+  --body-18-desktop-letter-spacing: 0px;
+  --body-18-desktop-line-height: 150%;
+  --colors-black: rgba(0, 0, 0, 1);
+  --colors-black-duplicate: rgba(0, 0, 0, 1);
+  --colors-dark-green: rgba(3, 136, 57, 1);
+  --colors-dark-green-duplicate: rgba(3, 136, 57, 1);
+  --colors-is-0: 0px;
+  --colors-is-104: 104px;
+  --colors-is-16: 16px;
+  --colors-is-24: 24px;
+  --colors-is-32: 32px;
+  --colors-is-40: 40px;
+  --colors-is-48: 48px;
+  --colors-is-56: 56px;
+  --colors-is-64: 64px;
+  --colors-is-72: 72px;
+  --colors-is-8: 8px;
+  --colors-is-80: 80px;
+  --colors-is-88: 88px;
+  --colors-is-96: 96px;
+  --colors-light-green: rgba(165, 206, 138, 1);
+  --colors-light-green-duplicate: rgba(165, 206, 138, 1);
+  --colors-main-green: rgba(36, 197, 122, 1);
+  --colors-white: rgba(255, 255, 255, 1);
+  --colors-white-duplicate: rgba(255, 255, 255, 1);
+  --h1-desktop-font-family: "Poppins", Helvetica;
+  --h1-desktop-font-size: 50px;
+  --h1-desktop-font-style: normal;
+  --h1-desktop-font-weight: 700;
+  --h1-desktop-letter-spacing: 0px;
+  --h1-desktop-line-height: 120.00000476837158%;
+  --h1-mobile-font-family: "Poppins", Helvetica;
+  --h1-mobile-font-size: 32px;
+  --h1-mobile-font-style: normal;
+  --h1-mobile-font-weight: 700;
+  --h1-mobile-letter-spacing: 0px;
+  --h1-mobile-line-height: 120.00000476837158%;
+  --h2-desktop-font-family: "Poppins", Helvetica;
+  --h2-desktop-font-size: 52px;
+  --h2-desktop-font-style: normal;
+  --h2-desktop-font-weight: 400;
+  --h2-desktop-letter-spacing: 0px;
+  --h2-desktop-line-height: 120.00000476837158%;
+  --h2-mobile-font-family: "Poppins", Helvetica;
+  --h2-mobile-font-size: 24px;
+  --h2-mobile-font-style: normal;
+  --h2-mobile-font-weight: 700;
+  --h2-mobile-letter-spacing: 0px;
+  --h2-mobile-line-height: 120.00000476837158%;
+  --h3-desktop-font-family: "Poppins", Helvetica;
+  --h3-desktop-font-size: 48px;
+  --h3-desktop-font-style: normal;
+  --h3-desktop-font-weight: 700;
+  --h3-desktop-letter-spacing: 0px;
+  --h3-desktop-line-height: 120.00000476837158%;
+  --h3-mobile-font-family: "Poppins", Helvetica;
+  --h3-mobile-font-size: 20px;
+  --h3-mobile-font-style: normal;
+  --h3-mobile-font-weight: 700;
+  --h3-mobile-letter-spacing: 0px;
+  --h3-mobile-line-height: 129.99999523162842%;
+  --h4-desktop-font-family: "Poppins", Helvetica;
+  --h4-desktop-font-size: 44px;
+  --h4-desktop-font-style: normal;
+  --h4-desktop-font-weight: 700;
+  --h4-desktop-letter-spacing: 0px;
+  --h4-desktop-line-height: 120.00000476837158%;
+  --h5-desktop-font-family: "Poppins", Helvetica;
+  --h5-desktop-font-size: 40px;
+  --h5-desktop-font-style: normal;
+  --h5-desktop-font-weight: 700;
+  --h5-desktop-letter-spacing: 0px;
+  --h5-desktop-line-height: 120.00000476837158%;
+  --h6-desktop-font-family: "Poppins", Helvetica;
+  --h6-desktop-font-size: 32px;
+  --h6-desktop-font-style: normal;
+  --h6-desktop-font-weight: 700;
+  --h6-desktop-letter-spacing: 0px;
+  --h6-desktop-line-height: 129.99999523162842%;
+  --h7-desktop-font-family: "Poppins", Helvetica;
+  --h7-desktop-font-size: 24px;
+  --h7-desktop-font-style: normal;
+  --h7-desktop-font-weight: 700;
+  --h7-desktop-letter-spacing: 0px;
+  --h7-desktop-line-height: 139.9999976158142%;
+  --h8-desktop-font-family: "Poppins", Helvetica;
+  --h8-desktop-font-size: 20px;
+  --h8-desktop-font-style: normal;
+  --h8-desktop-font-weight: 700;
+  --h8-desktop-letter-spacing: 0px;
+  --h8-desktop-line-height: 139.9999976158142%;
+  --shadow: 0px 2px 32px 0px rgba(3, 136, 57, 0.06);
+  --tagline-font-family: "Poppins", Helvetica;
+  --tagline-font-size: 16px;
+  --tagline-font-style: normal;
+  --tagline-font-weight: 400;
+  --tagline-letter-spacing: 0px;
+  --tagline-line-height: 150%;
+  --white: rgba(255, 255, 255, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +134,20 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--body-16-font-family), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:var(--body-16-font-family), sans-serif;
+  color: var(--black);
+}
+
+p, span {
+  font-family:var(--body-16-font-family), sans-serif;
+  color: var(--black);
 }

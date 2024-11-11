@@ -7,10 +7,11 @@ import CashOffer from "@/components/pages/home/cash-offer";
 import HowItWorks from "@/components/pages/home/how-it-works";
 import Features from "@/components/pages/home/features";
 import Services from "@/components/pages/home/services";
+import About from "@/components/pages/home/about";
 
 const HomePage: React.FC = () => {
   return (
-      <div className="flex flex-col justify-center items-center bg-stone-100">
+      <div className="flex flex-col justify-center items-center bg-light-m1">
           <Navbar
               flowbiteYoutube="https://c.animaapp.com/ucgTyGcI/img/flowbite-youtube-solid-1.svg"
               icBaselineTiktok="https://c.animaapp.com/ucgTyGcI/img/ic-baseline-tiktok-1.svg"
@@ -18,6 +19,7 @@ const HomePage: React.FC = () => {
           />
           <Hero />
           <Features />
+          <About />
           <Services />
           <HowItWorks />
           <CashOffer />
