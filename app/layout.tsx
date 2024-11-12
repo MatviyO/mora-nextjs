@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/shared/layout/navbar";
+import React from "react";
+import Footer from "@/components/shared/layout/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,10 +29,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex flex-col justify-center items-center bg-light-m1">
+          <Navbar
+              flowbiteYoutube="https://c.animaapp.com/ucgTyGcI/img/flowbite-youtube-solid-1.svg"
+              icBaselineTiktok="https://c.animaapp.com/ucgTyGcI/img/ic-baseline-tiktok-1.svg"
+              logo="https://c.animaapp.com/ucgTyGcI/img/logo-1-1-1.svg"
+          />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
-  );
+);
 }

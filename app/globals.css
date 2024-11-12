@@ -126,7 +126,6 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
@@ -155,5 +154,5 @@ p, span {
 .background-gradient {
   background: linear-gradient(180deg, rgba(36, 197, 122, 0.7) 0%, rgba(3, 136, 57, 0.7) 100%),
   url('https://cdn.builder.io/api/v1/image/assets/TEMP/7c80bc8fd40a8ed5180a642c630ab28babf6ad87330160505678c371f03a08ed?placeholderIfAbsent=true&apiKey=b76556bb44884a25a2b2e23cb3ba4ea6') lightgray 50% / cover no-repeat;
-  color: white; /* Set default text color for better contrast */
+  color: white;
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import Hero from "@/components/pages/home/hero";
 import Locations from "@/components/pages/home/locations";
 import CashOffer from "@/components/pages/home/cash-offer";
 import HowItWorks from "@/components/pages/home/how-it-works";
@@ -8,21 +7,22 @@ import Services from "@/components/pages/home/services";
 import AboutMoraHomeBuyers from "@/components/pages/home/about";
 import FeaturesOffer from "@/components/pages/home/feature-offer";
 import Situations from "@/components/pages/home/situation";
+import AboutUsSection from "@/components/pages/about/about-hero";
 
-const HomePage: React.FC = () => {
-  return (
-     <>
-          <Hero />
-          <Features />
-          <Services />
-          <AboutMoraHomeBuyers />
-          <FeaturesOffer />
-          <HowItWorks />
-          <Situations />
-          <CashOffer />
-          <Locations />
-     </>
-  );
+const AboutPage: React.FC = () => {
+    return (
+        <>
+            <AboutUsSection />
+            <Features />
+            <Services />
+            <AboutMoraHomeBuyers />
+            <FeaturesOffer />
+            <HowItWorks />
+            <Situations />
+            <CashOffer />
+            <Locations />
+        </>
+    );
 };
 
-export default HomePage;
+export default AboutPage;
