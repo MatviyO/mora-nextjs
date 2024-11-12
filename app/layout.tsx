@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-col justify-center items-center bg-light-m1">
+        <div className="flex justify-center flex-col items-center bg-white w-full">
           <Navbar
               flowbiteYoutube="https://c.animaapp.com/ucgTyGcI/img/flowbite-youtube-solid-1.svg"
               icBaselineTiktok="https://c.animaapp.com/ucgTyGcI/img/ic-baseline-tiktok-1.svg"

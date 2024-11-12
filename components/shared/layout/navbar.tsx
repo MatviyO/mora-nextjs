@@ -14,8 +14,9 @@ export const Navbar = ({
                            icBaselineTiktok = "https://c.animaapp.com/ucgTyGcI/img/ic-baseline-tiktok.svg",
                        }: Props): JSX.Element => {
     return (
-        <div className="flex z-20  flex-col w-full items-center justify-center px-[72px] py-4 relative bg-white border-b [border-bottom-style:solid] border-colors-light-green-duplicate">
-            <div className="flex w-max-[1440px] items-center justify-center gap-8 relative self-stretch flex-[0_0_auto]">
+        <div className="w-full z-20 border-b border-colors-light-green-duplicate bg-white py-4">
+            <div className="flex items-center justify-between max-w-[1440px] w-full mx-auto px-12">
+                {/* Left Navigation */}
                 <div className="flex flex-col items-start relative flex-1 grow">
                     <div className="inline-flex items-start gap-6 relative flex-[0_0_auto]">
                         <div className="relative w-fit mt-[-1.00px] font-tagline font-[number:var(--tagline-font-weight)] text-black text-[length:var(--tagline-font-size)] tracking-[var(--tagline-letter-spacing)] leading-[var(--tagline-line-height)] whitespace-nowrap [font-style:var(--tagline-font-style)]">
