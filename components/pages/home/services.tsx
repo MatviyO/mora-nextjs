@@ -7,16 +7,24 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, image }) => (
-    <div className="flex flex-col flex-1 shrink bg-white rounded-2xl shadow-lg basis-0 min-w-[240px] max-md:max-w-full">
-        <div className="flex flex-col justify-center px-8 pt-8 w-full max-md:px-5 max-md:max-w-full">
-            <h3 className="text-3xl font-bold leading-tight">{title}</h3>
-            <p className="mt-4 text-sm leading-5 max-md:max-w-full">{description}</p>
-            <button className="gap-2 self-start px-6 py-3 mt-6 text-base text-white uppercase rounded-[30px] max-md:px-5">
-                learn more
+    <div className="flex flex-col flex-1 bg-white rounded-2xl shadow-lg min-w-[240px] max-w-[500px] max-md:max-w-full overflow-hidden">
+        <div className="flex flex-col justify-between px-8 pt-8 pb-4 w-full max-md:px-5 flex-grow">
+            <div>
+                <h3 className="text-3xl font-bold leading-tight">{title}</h3>
+                <p className="mt-4 text-sm leading-5 max-md:max-w-full">{description}</p>
+            </div>
+            <button
+                className="self-start px-6 py-3 mt-6 text-base text-white uppercase bg-green-500 rounded-[30px] max-md:px-5 gap-2 px-6 py-3 rounded-[30px] bg-gradient-to-r from-[#24C57A] to-[#038839]">
+                Learn more
             </button>
         </div>
-        <div className="flex flex-col w-full max-md:max-w-full">
-            <img loading="lazy" src={image} alt={`Illustration for ${title}`} className="object-contain w-full aspect-[1.9] max-md:max-w-full" />
+        <div className="w-full flex-grow">
+            <img
+                loading="lazy"
+                src={image}
+                alt={`Illustration for ${title}`}
+                className="object-cover w-full h-full"
+            />
         </div>
     </div>
 );
@@ -36,19 +44,17 @@ const Services: React.FC = () => {
     ];
 
     return (
-        <section className="flex overflow-hidden flex-col px-20 py-24 w-full max-md:px-5 max-md:max-w-full">
-            <h2 className="self-center max-w-full text-5xl font-bold leading-tight text-center text-black w-[768px]">
+        <section className="flex flex-col px-20 py-24 w-full max-md:px-5 max-md:max-w-full">
+            <h2 className="text-5xl font-bold leading-tight text-center text-black w-full max-w-[768px] mx-auto">
                 Our Services
             </h2>
-            <p className="self-center mt-6 text-lg text-center max-w-full w-[768px]">
+            <p className="mt-6 text-lg text-center w-full max-w-[768px] mx-auto">
                 Unique situations deserve personalized attention. We're here to help
             </p>
-            <div className="flex flex-col mt-10 w-full max-md:max-w-full">
-                <div className="flex flex-wrap gap-8 items-start w-full max-md:max-w-full">
-                    {services.map((service, index) => (
-                        <ServiceCard key={index} {...service} />
-                    ))}
-                </div>
+            <div className="flex flex-wrap gap-8 justify-center mt-10 w-full">
+                {services.map((service, index) => (
+                    <ServiceCard key={index} {...service} />
+                ))}
             </div>
         </section>
     );

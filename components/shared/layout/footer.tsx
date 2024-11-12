@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="flex overflow-hidden flex-col px-20 py-11 w-full bg-white border-t border-stone-400 max-md:px-5 max-md:max-w-full">
+        <footer className="flex w-full overflow-hidden flex-col px-20 py-11 bg-white border-t border-[#A5CE8A] max-md:px-5 max-md:max-w-full">
             <div className="flex flex-col items-center self-center">
                 <div className="flex flex-col items-center text-base text-black uppercase">
                     <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0d8c09f81ebe12bbc8fb918e9402b97ac573d15fa7fb35a011b0404a37431d62?placeholderIfAbsent=true&apiKey=b76556bb44884a25a2b2e23cb3ba4ea6" alt="Company logo" className="object-contain max-w-full aspect-[2.75] w-[154px]" />
@@ -21,11 +21,10 @@ const Footer: React.FC = () => {
                     <a href="#youtube" aria-label="YouTube"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2a3849634dd5f9d095136a4c26bc6090213144f03f7af0601deab489c6da3cf2?placeholderIfAbsent=true&apiKey=b76556bb44884a25a2b2e23cb3ba4ea6" alt="" className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" /></a>
                 </div>
             </div>
-            <div className="flex flex-col mt-20 w-full text-sm text-black max-md:mt-10 max-md:max-w-full">
-                <div className="flex w-full bg-stone-400 min-h-[1px] max-md:max-w-full" />
+            <div className="flex flex-col mt-20 w-full text-sm text-black max-md:mt-10 max-md:max-w-full border-t border-[#A5CE8A]">
                 <div className="flex flex-wrap gap-10 justify-between items-start mt-8 w-full max-md:max-w-full">
                     <p className="max-md:max-w-full">
-                        © 2023 Mora home buyers. All rights reserved. Created by Digitality agency
+                        © 2024 Mora home buyers. All rights reserved. Created by Oleh Matvii
                     </p>
                     <div className="flex gap-6 items-start min-w-[240px]">
                         <a href="#privacy" className="underline">Privacy Policy</a>

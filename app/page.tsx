@@ -7,7 +7,9 @@ import CashOffer from "@/components/pages/home/cash-offer";
 import HowItWorks from "@/components/pages/home/how-it-works";
 import Features from "@/components/pages/home/features";
 import Services from "@/components/pages/home/services";
-import About from "@/components/pages/home/about";
+import AboutMoraHomeBuyers from "@/components/pages/home/about";
+import FeaturesOffer from "@/components/pages/home/feature-offer";
+import Situations from "@/components/pages/home/situation";
 
 const HomePage: React.FC = () => {
   return (
@@ -19,9 +21,11 @@ const HomePage: React.FC = () => {
           />
           <Hero />
           <Features />
-          <About />
           <Services />
+          <AboutMoraHomeBuyers />
+          <FeaturesOffer />
           <HowItWorks />
+          <Situations />
           <CashOffer />
           <Locations />
           <Footer />
