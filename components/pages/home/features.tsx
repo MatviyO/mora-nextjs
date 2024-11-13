@@ -46,9 +46,9 @@ const Features: React.FC = () => {
     ];
 
     return (
-        <section className="flex overflow-hidden flex-col gap-20 justify-center px-20 py-4 w-full text-center bg-white max-md:px-5 max-md:max-w-full">
-            <div className="flex flex-col justify-center w-full max-md:max-w-full">
-                <div className="flex flex-wrap gap-8 items-center w-full max-md:max-w-full">
+        <section className="flex overflow-hidden flex-col gap-20 justify-center px-20 py-4 text-center bg-white max-md:px-5 w-full">
+            <div className="flex flex-col justify-center max-w-[1440px] w-full mx-auto px-12">
+                <div className="flex flex-wrap gap-8 items-center w-full ">
                     {features.map((feature, index) => (
                         <React.Fragment key={index}>
                             <FeatureCard {...feature} />

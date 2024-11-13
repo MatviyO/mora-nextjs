@@ -2,9 +2,9 @@ import React from 'react';
 
 const CashOffer: React.FC = () => {
     return (
-        <section className="flex overflow-hidden flex-col px-20 pt-8 pb-14 w-full bg-white max-md:px-5 max-md:max-w-full">
-            <div className="flex relative gap-10 items-start w-full max-md:max-w-full">
-                <div className="flex z-0 flex-col flex-1 shrink self-stretch my-auto text-black basis-12 min-w-[240px] max-md:max-w-full">
+        <section className="flex overflow-hidden flex-col pt-8 pb-14 w-full bg-white ">
+            <div className="flex relative gap-10 items-start max-w-[1440px] w-full mx-auto px-12">
+                <div className="flex z-0 flex-col flex-1 shrink self-stretch my-auto text-black basis-12 max-md:max-w-full">
                     <h2 className="w-full text-5xl font-bold leading-tight max-md:max-w-full">
                         Get a cash offer today.
                     </h2>

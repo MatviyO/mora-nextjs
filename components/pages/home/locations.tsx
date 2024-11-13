@@ -2,9 +2,10 @@ import React from 'react';
 
 const ContactSection = () => {
     return (
-        <div className="flex flex-col items-start p-16 bg-white w-full h-[793px] gap-10">
+        <div className="flex  items-start p-16 bg-white w-full gap-10">
+            <div className="flex flex-col items-center justify-between max-w-[1440px] w-full mx-auto px-12">
             {/* Section Title */}
-            <div className="flex flex-col items-start gap-4 h-[131px]">
+            <div className="flex flex-col items-start gap-4 mb-12">
                 <div className="flex flex-col items-start gap-6 w-full">
                     <h2 className="text-4xl font-bold text-black leading-tight">Where we operate</h2>
                     <p className="text-lg text-black max-w-[458px]">Not seeing your location? Reach out, and our team will help tailor a solution for you.</p>
@@ -45,6 +46,7 @@ const ContactSection = () => {
                         <div className="w-2 h-4 bg-white" />
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );
