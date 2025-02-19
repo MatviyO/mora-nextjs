@@ -54,6 +54,7 @@ export const Navbar = ({
                         <Link href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
                             <img className="relative w-6 h-6 hover:text-colors-light-green transition-colors duration-200" alt="TikTok" src={icBaselineTiktok} />
                         </Link>
+
                     </div>
 
                     {/* Get Started Button */}
