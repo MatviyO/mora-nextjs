@@ -62,7 +62,7 @@ export const Navbar = ({
               <span className="relative font-tagline font-[number:var(--tagline-font-weight)] text-colors-black-duplicate text-[length:var(--tagline-font-size)] tracking-[var(--tagline-letter-spacing)] leading-[var(--tagline-line-height)] whitespace-nowrap [font-style:var(--tagline-font-style)]">
                 GET STARTED
               </span>
-                            <img className="relative w-[27px] h-6" alt="Vector" src="https://c.animaapp.com/ucgTyGcI/img/vector-1.svg" />
+                     <img className="relative w-[27px] h-6" alt="Vector" src="https://c.animaapp.com/ucgTyGcI/img/vector-1.svg" />
                         </button>
                     </div>
                 </div>
